@@ -54,7 +54,8 @@
         "setting" : {
             "urlCheck" : false
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "projectname": "vitesse-uniapp-vue3"
     },
     "mp-alipay" : {
         "usingComponents" : true
@@ -65,7 +66,7 @@
     "mp-toutiao" : {
         "usingComponents" : true
     },
-    "uniStatistics": {  
+    "uniStatistics": {
         "enable": false
     },
     "vueVersion" : "3"

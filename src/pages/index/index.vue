@@ -4,6 +4,8 @@
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
+    下列蓝色链接点击跳转到相应依赖的页面测试兼容性
+    <navigator url="/pages/uview-plus/index">uview-plus</navigator>
   </view>
 </template>
 
@@ -37,5 +39,9 @@ const title = ref('Hello')
 .title {
   font-size: 36rpx;
   color: #8f8f94;
+}
+
+navigator {
+  color: cornflowerblue;
 }
 </style>
