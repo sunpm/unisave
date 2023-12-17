@@ -1,13 +1,21 @@
+
+## 平台兼容性
+在技术考量上，优先考虑下列的平台，为兼容多个平台而舍弃一些实用的依赖插件。如发现下列平台环境开发编译出现问题，欢迎提 ➡️[PR](https://github.com/sunpm/vitesse-uniapp-vue3/issues/new)
+
+| IOS  | 安卓 | 微信小程序 | 字节小程序 | 快手小程序 | 支付宝小程序 |
+| :--: | :--: | :--------: | :--------: | :--------: | :----------: |
+|  √   |  √   |     √      |     √      |     √      |      √       |
+
 ## 环境建议
 **Node >= 18**
 
-**pnpm 8**
+[//]: # (**pnpm 8**)
 
 ## 使用该模版
 ```sh
 npx degit sunpm/vitesse-uniapp-vue3#main my-vitesse-uniapp-vue3
 cd my-vitesse-uniapp-vue3
-pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
+#pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
 
 ## 预配置
