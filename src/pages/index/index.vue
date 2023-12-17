@@ -5,7 +5,12 @@
       <text class="title">{{ title }}</text>
     </view>
     下列蓝色链接点击跳转到相应依赖的页面测试兼容性
-    <navigator url="/pages/uview-plus/index">uview-plus</navigator>
+    <view>
+      <navigator url="/pages/uview-plus/index">uview-plus</navigator>
+    </view>
+    <view>
+      <navigator url="/pages/unocss/index">unocss</navigator>
+    </view>
   </view>
 </template>
 
@@ -20,6 +25,7 @@ const title = ref('Hello')
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 50rpx;
 }
 
 .logo {
