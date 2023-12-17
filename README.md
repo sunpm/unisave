@@ -15,8 +15,8 @@
 ```sh
 npx degit sunpm/vitesse-uniapp-vue3#main my-vitesse-uniapp-vue3
 cd my-vitesse-uniapp-vue3
-#pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
+[//]: # (pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm)
 
 ## 预配置
 
