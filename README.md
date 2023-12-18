@@ -5,7 +5,12 @@
 |:--:| :--: | :--: | :--------: | :--------: | :--------: | :----------: |
 | √  |  √   |  √   |     √      |     √      |     √      |      √       |
 
-## 环境建议
+
+## 特性
+- 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org/)
+- 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
+- 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
+- 🦾 TypeScript, 当然
 
 ## 预配置
 
@@ -30,6 +35,8 @@
 报错：`Uncaught SyntaxError: The requested module '/node_modules/vue-demi/lib/index.mjs?v=701bef9f' does not provide an export named 'hasInjectionContext'`
 > pinia v2.1.X 版本要求 vue 3.3 或者 vue-demi latest ，目前 uniapp 的 vue 版本是 ^3.2.45，通过 pinia 降级到 2.0.X 可以运行和使用。
 
+
+## 环境建议
 
 **Node >= 18**
 
