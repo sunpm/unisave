@@ -1,37 +1,43 @@
-<template>
-  <view class="content">
-    <image class="logo" src="/static/logo.png"/>
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-    </view>
-    下列蓝色链接点击跳转到相应依赖的页面测试兼容性
-    <view>
-      <navigator url="/pages/uview-plus/index">uview-plus</navigator>
-    </view>
-    <view>
-      <navigator url="/pages/unocss/index">unocss</navigator>
-    </view>
-    <up-input
-        placeholder="请输入内容"
-        border="surround"
-        v-model.number="count"
-        type="number"
-    ></up-input>
-    <u-button text="+" @click="inc"></u-button>
-    <u-button text="-" @click="dec"></u-button>
-  </view>
-</template>
-
 <script setup lang="ts">
-import {useCountStore} from "@/store";
-import {ref} from 'vue'
-import {storeToRefs} from "pinia";
+import { ref } from 'vue'
+import { storeToRefs } from 'pinia'
+import { useCountStore } from '@/store'
 
 const title = ref('Hello')
 
-const {count} = storeToRefs(useCountStore())
-const {inc, dec} = useCountStore()
+const { count } = storeToRefs(useCountStore())
+const { inc, dec } = useCountStore()
 </script>
+
+<template>
+  <view class="content">
+    <image class="logo" src="/static/logo.png" />
+    <view class="text-area">
+      <text class="title">
+        {{ title }}
+      </text>
+    </view>
+    下列蓝色链接点击跳转到相应依赖的页面测试兼容性
+    <view>
+      <navigator url="/pages/uview-plus/index">
+        uview-plus
+      </navigator>
+    </view>
+    <view>
+      <navigator url="/pages/unocss/index">
+        unocss
+      </navigator>
+    </view>
+    <up-input
+      v-model.number="count"
+      placeholder="请输入内容"
+      border="surround"
+      type="number"
+    />
+    <u-button text="+" @click="inc" />
+    <u-button text="-" @click="dec" />
+  </view>
+</template>
 
 <style>
 .content {

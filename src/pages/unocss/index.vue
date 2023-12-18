@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <view border="1 solid" padding="10" text="center">
     Unocss
@@ -6,10 +9,6 @@
     点我 / 将鼠标 hover
   </view>
 </template>
-
-<script setup lang="ts">
-
-</script>
 
 <style>
 
