@@ -5,10 +5,10 @@ export const useCountStore = defineStore('count', () => {
       const count = ref(0)
 
       function inc() {
-        count.value = +count.value + 1
+        count.value += 1
       }
       function dec() {
-        count.value = +count.value - 1
+        count.value -= 1
       }
 
       return {

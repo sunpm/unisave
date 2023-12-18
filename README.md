@@ -24,3 +24,15 @@ cd my-vitesse-uniapp-vue3
 - [uview-plus](https://uiadmin.net/uview-plus) uview-plus3.0是基于uView2.x修改的vue3版本
 - [unocss](https://github.com/unocss/unocss) 即时按需原子 css 引擎
 - [unocss-preset-uni](https://github.com/uni-helper/unocss-preset-uni) 专为 uni-app 打造的 UnoCSS 预设
+
+### 插件
+- [Pinia](https://github.com/vuejs/pinia) - 直接的, 类型安全的, 使用 Composition API 的轻便灵活的 Vue 状态管理
+  - [pinia-plugin-persist-uni](https://github.com/Allen-1998/pinia-plugin-persist-uni) - pinia 在 uniapp 中数据持久化插件
+
+
+
+
+## 问题
+
+报错：`Uncaught SyntaxError: The requested module '/node_modules/vue-demi/lib/index.mjs?v=701bef9f' does not provide an export named 'hasInjectionContext'`
+> pinia v2.1.X 版本要求 vue 3.3 或者 vue-demi latest ，目前 uniapp 的 vue 版本是 ^3.2.45，通过 pinia 降级到 2.0.X 可以运行和使用。

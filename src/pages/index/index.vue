@@ -14,7 +14,7 @@
     <up-input
         placeholder="请输入内容"
         border="surround"
-        v-model="count"
+        v-model.number="count"
         type="number"
     ></up-input>
     <u-button text="+" @click="inc"></u-button>
