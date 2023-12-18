@@ -1,6 +1,6 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png" />
+    <image class="logo" src="/static/logo.png"/>
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
@@ -11,12 +11,26 @@
     <view>
       <navigator url="/pages/unocss/index">unocss</navigator>
     </view>
+    <up-input
+        placeholder="请输入内容"
+        border="surround"
+        v-model="count"
+        type="number"
+    ></up-input>
+    <u-button text="+" @click="inc"></u-button>
+    <u-button text="-" @click="dec"></u-button>
   </view>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import {useCountStore} from "@/store";
+import {ref} from 'vue'
+import {storeToRefs} from "pinia";
+
 const title = ref('Hello')
+
+const {count} = storeToRefs(useCountStore())
+const {inc, dec} = useCountStore()
 </script>
 
 <style>

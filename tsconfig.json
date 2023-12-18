@@ -8,7 +8,7 @@
     },
     "lib": ["esnext", "dom"],
     "types": ["@dcloudio/types", "@ttou/uview-typings/v3",
-      "@ttou/uview-typings/refs"]
+      "@ttou/uview-typings/refs", "pinia-plugin-persist-uni"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

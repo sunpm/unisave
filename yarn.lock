@@ -5599,6 +5599,21 @@ pify@^2.3.0:
   resolved "https://registry.npmmirror.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
   integrity sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==
 
+pinia-plugin-persist-uni@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmmirror.com/pinia-plugin-persist-uni/-/pinia-plugin-persist-uni-1.2.0.tgz#05df82621e6baa7ae1c58e5b647883705af99f40"
+  integrity sha512-9ZLdeB+nfeu0WD7WEv19E1u2cWbnK/J8fDR5w56JPGoQtbU4Uy8VLKSvfHlbuVzGxBaE1DhG4/ulWVm3oAArpg==
+  dependencies:
+    vue-demi "^0.12.1"
+
+pinia@~2.0.33:
+  version "2.0.36"
+  resolved "https://registry.npmmirror.com/pinia/-/pinia-2.0.36.tgz#65130f3b94cc7fe25156308634010fab893dff24"
+  integrity sha512-4UKApwjlmJH+VuHKgA+zQMddcCb3ezYnyewQ9NVrsDqZ/j9dMv5+rh+1r48whKNdpFkZAWVxhBp5ewYaYX9JcQ==
+  dependencies:
+    "@vue/devtools-api" "^6.5.0"
+    vue-demi "*"
+
 pixelmatch@^4.0.2:
   version "4.0.2"
   resolved "https://registry.npmmirror.com/pixelmatch/-/pixelmatch-4.0.2.tgz#8f47dcec5011b477b67db03c243bc1f3085e8854"
@@ -6608,6 +6623,16 @@ vite@4.0.3:
     rollup "^3.7.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+vue-demi@*:
+  version "0.14.6"
+  resolved "https://registry.npmmirror.com/vue-demi/-/vue-demi-0.14.6.tgz#dc706582851dc1cdc17a0054f4fec2eb6df74c92"
+  integrity sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w==
+
+vue-demi@^0.12.1:
+  version "0.12.5"
+  resolved "https://registry.npmmirror.com/vue-demi/-/vue-demi-0.12.5.tgz#8eeed566a7d86eb090209a11723f887d28aeb2d1"
+  integrity sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==
 
 vue-eslint-parser@^9.3.1, vue-eslint-parser@^9.3.2:
   version "9.3.2"
