@@ -16,7 +16,7 @@
 
 ### UI 框架
 - [uview-plus](https://uiadmin.net/uview-plus) uview-plus3.0是基于uView2.x修改的vue3版本
-- [unocss](https://github.com/unocss/unocss) 高性能且极具灵活性的即时原子化 CSS 引擎
+- [UnoCSS](https://github.com/unocss/unocss) 高性能且极具灵活性的即时原子化 CSS 引擎
 - [unocss-preset-uni](https://github.com/uni-helper/unocss-preset-uni) 专为 uni-app 打造的 UnoCSS 预设
 
 ### 插件
@@ -30,12 +30,6 @@
   - [unocss/eslint-config](https://unocss.dev/integrations/eslint) - 用于UnoCSS的ESLint配置
 
 
-## 问题
-
-报错：`Uncaught SyntaxError: The requested module '/node_modules/vue-demi/lib/index.mjs?v=701bef9f' does not provide an export named 'hasInjectionContext'`
-> pinia v2.1.X 版本要求 vue 3.3 或者 vue-demi latest ，目前 uniapp 的 vue 版本是 ^3.2.45，通过 pinia 降级到 2.0.X 可以运行和使用。
-
-
 ## 环境建议
 
 **Node >= 18**
@@ -46,5 +40,12 @@
 ```sh
 npx degit sunpm/vitesse-uniapp-vue3#main my-vitesse-uniapp-vue3
 cd my-vitesse-uniapp-vue3
+yarn
 ```
 [//]: # (pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm)
+
+## 问题
+
+报错：`Uncaught SyntaxError: The requested module '/node_modules/vue-demi/lib/index.mjs?v=701bef9f' does not provide an export named 'hasInjectionContext'`
+> pinia v2.1.X 版本要求 vue 3.3 或者 vue-demi latest ，目前 uniapp 的 vue 版本是 ^3.2.45，通过 pinia 降级到 2.0.X 可以运行和使用。
+
