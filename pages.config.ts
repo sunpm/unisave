@@ -15,6 +15,7 @@ export default defineUniPages({
   pages: [],
   globalStyle: {
     navigationBarBackgroundColor: '#fff',
+    backgroundColor: '#fff',
     navigationBarTextStyle: 'black',
     navigationBarTitleText: 'vitesse-uniapp-vue3',
   },
