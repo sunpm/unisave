@@ -71,3 +71,8 @@ navigator {
   color: cornflowerblue;
 }
 </style>
+
+<route lang="yaml">
+style:
+  navigationBarTitleText: 首页
+</route>

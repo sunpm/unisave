@@ -2596,6 +2596,11 @@
     "@dcloudio/types" "^3.3.3"
     vue3 "npm:vue@^3.3.2"
 
+"@uni-helper/uni-env@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.npmmirror.com/@uni-helper/uni-env/-/uni-env-0.0.3.tgz#3d2adf53bfec0dadfdb34f4720620428c26f7e3e"
+  integrity sha512-K6MEnmN7Dg+NnEkfUUhjaKc/rPVY7tcGdsVUKOlC1/z2E6H6zjSSTdJg8z+sVJtZ03Ff1G/MHz2PYDyAS6gjQQ==
+
 "@uni-helper/uni-env@^0.1.1":
   version "0.1.1"
   resolved "https://registry.npmmirror.com/@uni-helper/uni-env/-/uni-env-0.1.1.tgz#7de54e7095f972acbfaed751f4ba0308be5e00a7"
@@ -2617,6 +2622,22 @@
     "@unocss/vite" "^0.57.7"
     unocss "^0.57.7"
     unocss-applet "^0.7.8"
+
+"@uni-helper/vite-plugin-uni-pages@^0.2.12":
+  version "0.2.12"
+  resolved "https://registry.npmmirror.com/@uni-helper/vite-plugin-uni-pages/-/vite-plugin-uni-pages-0.2.12.tgz#59202bc1d898cb9a788401e1afb7fe05ce4093b3"
+  integrity sha512-7Y5nX5o8BrUGWQyHYLSHbE5HxzXxkVpis988SDHAPOY+Kl6acpcg2hvfUNM99l1h4l1KwzW/JCr9u4Ib62HkjA==
+  dependencies:
+    "@uni-helper/uni-env" "^0.0.3"
+    "@vue/compiler-sfc" "^3.3.4"
+    chokidar "^3.5.3"
+    debug "^4.3.4"
+    fast-glob "^3.3.1"
+    json5 "^2.2.3"
+    lodash-unified "^1.0.3"
+    magic-string "^0.30.4"
+    unconfig "^0.3.11"
+    yaml "^2.3.2"
 
 "@unocss-applet/preset-applet@0.7.8":
   version "0.7.8"
@@ -3053,7 +3074,7 @@
     postcss "^8.1.10"
     source-map "^0.6.1"
 
-"@vue/compiler-sfc@3.3.12":
+"@vue/compiler-sfc@3.3.12", "@vue/compiler-sfc@^3.3.4":
   version "3.3.12"
   resolved "https://registry.npmmirror.com/@vue/compiler-sfc/-/compiler-sfc-3.3.12.tgz#6ec2c19858f264671457699c1f3a0a6fedf429fe"
   integrity sha512-yy5b9e7b79dsGbMmglCe/YnhCQgBkHO7Uf6JfjWPSf2/5XH+MKn18LhzhHyxbHdJgnA4lZCqtXzLaJz8Pd8lMw==
@@ -5547,6 +5568,11 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash-unified@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmmirror.com/lodash-unified/-/lodash-unified-1.0.3.tgz#80b1eac10ed2eb02ed189f08614a29c27d07c894"
+  integrity sha512-WK9qSozxXOD7ZJQlpSqOT+om2ZfcT4yO+03FuzAHD0wF6S0l0090LRPDx3vhTTLZ8cFKpBn+IOcVXK6qOcIlfQ==
+
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.npmmirror.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
@@ -5588,7 +5614,7 @@ magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.8"
 
-magic-string@^0.30.0, magic-string@^0.30.1, magic-string@^0.30.5:
+magic-string@^0.30.0, magic-string@^0.30.1, magic-string@^0.30.4, magic-string@^0.30.5:
   version "0.30.5"
   resolved "https://registry.npmmirror.com/magic-string/-/magic-string-0.30.5.tgz#1994d980bd1c8835dc6e78db7cbd4ae4f24746f9"
   integrity sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==
@@ -7437,7 +7463,7 @@ yaml@^1.10.2:
   resolved "https://registry.npmmirror.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
-yaml@^2.0.0:
+yaml@^2.0.0, yaml@^2.3.2:
   version "2.3.4"
   resolved "https://registry.npmmirror.com/yaml/-/yaml-2.3.4.tgz#53fc1d514be80aabf386dc6001eb29bf3b7523b2"
   integrity sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==
