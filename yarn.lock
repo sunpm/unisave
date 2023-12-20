@@ -7105,7 +7105,7 @@ unicode-property-aliases-ecmascript@^2.0.0:
   resolved "https://registry.npmmirror.com/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-2.1.0.tgz#43d41e3be698bd493ef911077c9b131f827e8ccd"
   integrity sha512-6t3foTQI9qne+OZoVQB/8x8rk2k1eVy1gRXhV3oFQ5T6R1dqQ1xtin3XqSlx3+ATBkliTaR/hHyJBm+LVPNM8w==
 
-unimport@^3.4.0:
+unimport@^3.4.0, unimport@^3.6.0:
   version "3.6.1"
   resolved "https://registry.npmmirror.com/unimport/-/unimport-3.6.1.tgz#b1448ba7c86ee5fca362ba4030691759205998f9"
   integrity sha512-zKzbp8AQ+l8QK3XrONtUBdgBbMI8TkGh8hBYF77ZkVqMLLIAHwGSwJRFolPQMBx/5pezeRKvmu2gzlqnxRZeqQ==
@@ -7189,6 +7189,20 @@ unplugin-auto-import@^0.16.7:
     minimatch "^9.0.3"
     unimport "^3.4.0"
     unplugin "^1.5.0"
+
+unplugin-auto-import@^0.17.2:
+  version "0.17.2"
+  resolved "https://registry.npmmirror.com/unplugin-auto-import/-/unplugin-auto-import-0.17.2.tgz#b55c58dfb46f323905c5a0616a9d3825fb72679c"
+  integrity sha512-Eu/xWI6SH4jTWXvzOfXQWAxRtiz/gMObm7wXtgMj7wBjHQKLgHTmHd4R4oha87KYGah1aKMqiqDeAxiPmfSoTg==
+  dependencies:
+    "@antfu/utils" "^0.7.6"
+    "@rollup/pluginutils" "^5.1.0"
+    fast-glob "^3.3.2"
+    local-pkg "^0.5.0"
+    magic-string "^0.30.5"
+    minimatch "^9.0.3"
+    unimport "^3.6.0"
+    unplugin "^1.5.1"
 
 unplugin@^1.5.0, unplugin@^1.5.1:
   version "1.5.1"

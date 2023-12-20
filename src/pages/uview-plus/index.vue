@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const form1 = ref<_FormRef | null>(null)
 const showSex = ref(false)
 const model1 = ref({
