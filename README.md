@@ -9,7 +9,11 @@
 ## 特性
 - 🗂 [基于文件的路由](./src/pages)
 
+- -📦 [组件自动化加载](./src/components)
+
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org/)
+
+- 📑 [布局系统](./src/layouts)
 
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
@@ -31,6 +35,8 @@
   - [`pinia-plugin-persist-uni`](https://github.com/Allen-1998/pinia-plugin-persist-uni) - pinia 在 uniapp 中数据持久化插件
 - Router
   - [`@uni-helper/vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - 在 Vite 驱动的 uni-app 上使用基于文件的路由系统
+  - [`vite-plugin-vue-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - 页面布局系统
+- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
 
 ### 编码风格
