@@ -2,7 +2,7 @@ import { createSSRApp } from 'vue'
 import uviewPlus from 'uview-plus'
 import App from './App.vue'
 import { pinia } from '@/store'
-import 'virtual:uno.css'
+import 'uno.css'
 
 export function createApp() {
   const app = createSSRApp(App)
