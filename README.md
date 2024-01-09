@@ -9,7 +9,7 @@
 ## 特性
 - 🗂 [基于文件的路由](./src/pages)
 
-- -📦 [组件自动化加载](./src/components)
+- 📦 [组件自动化加载](./src/components)
 
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org/)
 
@@ -44,6 +44,7 @@
 - 使用 Composition API 地 [`<script setup>` SFC 语法](https://github.com/vuejs/rfcs/pull/227)
 - [ESLint](https://eslint.org/) 配置为 [@antfu/eslint-config](https://github.com/antfu/eslint-config) - 单引号, 无分号...
   - [@unocss/eslint-config](https://unocss.dev/integrations/eslint) - 用于UnoCSS的ESLint配置
+  - [@uni-helper/eslint-config](https://github.com/uni-helper/eslint-config) - 适用于 uni-app 的 Anthony's ESLint 配置预设
 
 
 ## 环境建议
