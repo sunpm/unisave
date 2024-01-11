@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
@@ -55,4 +56,14 @@ export default defineConfig({
     }),
     uni(),
   ],
+  /**
+   * Vitest
+   * @see https://github.com/vitest-dev/vitest
+   */
+  // vite升级到4.0.4后，该配置不会报错，但是因为众所周知的问题，uniapp 的 vite 能不升级还是不要动
+  // eslint-disable-next-line ts/ban-ts-comment
+  // @ts-expect-error
+  test: {
+    environment: 'jsdom',
+  },
 })
