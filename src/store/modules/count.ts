@@ -16,8 +16,7 @@ export const useCountStore = defineStore('count', () => {
     inc,
     dec,
   }
-},
-{
+}, {
   persist: {
     enabled: true,
     detached: true, // 设置订阅与组件分离
