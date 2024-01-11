@@ -1,3 +1,14 @@
+<p align='center'>
+快速地<sup><em>vitesse-uniapp-vue3</em></sup> 创建 uniapp + vue3 + ts 应用
+<br>
+</p>
+
+<br>
+
+<p align='center'>
+<a href="https://vitesse-uniapp-vue3.netlify.app/">🖥 在线预览</a>
+</p>
+
 ## 平台兼容性
 在技术考量上，优先同时支持下列的平台，为兼容多个平台而舍弃一些实用的依赖插件。如发现下列平台环境开发编译出现问题，欢迎提 [issue](https://github.com/sunpm/vitesse-uniapp-vue3/issues/new) or [pr](https://github.com/sunpm/vitesse-uniapp-vue3/pulls)
 
