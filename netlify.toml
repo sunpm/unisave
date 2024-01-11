@@ -1,0 +1,12 @@
+[build.environment]
+  NPM_FLAGS = "--version"
+  NODE_VERSION = "18"
+
+[build]
+  publish = "dist/build/h5"
+  command = "yarn run build:h5"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
