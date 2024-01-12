@@ -5,7 +5,7 @@
     <slot />
     <Footer />
     <div mx-auto mt-4 text-center text-sm opacity-50>
-      [Default Layout]
+      [Home Layout]
     </div>
   </main>
 </template>
