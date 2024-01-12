@@ -12,9 +12,12 @@ export default defineUniPages({
   // 你也可以定义 pages 字段，它具有最高的优先级。
   pages: [],
   globalStyle: {
-    navigationBarBackgroundColor: '#fff',
-    backgroundColor: '#fff',
-    navigationBarTextStyle: 'black',
-    navigationBarTitleText: 'vitesse-uniapp-vue3',
+    'navigationBarBackgroundColor': '#fff',
+    'backgroundColor': '#fff',
+    'navigationBarTextStyle': 'black',
+    'navigationBarTitleText': 'vitesse-uniapp-vue3',
+    'app-plus': {
+      titleNView: false, // 移除 H5、APP 顶部导航
+    },
   },
 })

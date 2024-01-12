@@ -33,11 +33,13 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
+        'pinia',
         'uni-app',
       ],
       dts: true,
       dirs: [
         './src/composables',
+        './src/store',
       ],
       vueTemplate: true,
     }),
