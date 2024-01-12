@@ -27,7 +27,10 @@
     "navigationBarBackgroundColor": "#fff",
     "backgroundColor": "#fff",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "vitesse-uniapp-vue3"
+    "navigationBarTitleText": "vitesse-uniapp-vue3",
+    "app-plus": {
+      "titleNView": false
+    }
   },
   "subPackages": []
 }

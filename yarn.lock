@@ -8025,7 +8025,7 @@ unocss-applet@^0.7.8:
     "@unocss-applet/transformer-attributify" "0.7.8"
     "@unocss/preset-uno" "^0.56.5"
 
-unocss@^0.58.0:
+unocss@^0.58.0, unocss@^0.58.3:
   version "0.58.3"
   resolved "https://registry.npmmirror.com/unocss/-/unocss-0.58.3.tgz#483232a5bacaf4dadd0f33a81d9ee27bf69ce21e"
   integrity sha512-2rnvghfiIDRQ2cOrmN4P7J7xV2p3yBK+bPAt1aoUxCXcszkLczAnQzh9c7IZ+p70kSVstK45cJTYV6TMzOLF7Q==
