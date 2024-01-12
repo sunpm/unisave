@@ -34,6 +34,8 @@
 
 - 🦾 TypeScript, 当然
 
+- ⚙️ 使用 [Vitest](https://github.com/vitest-dev/vitest) 进行单元测试
+
 ## 预配置
 
 ### UI 框架
@@ -77,3 +79,8 @@ yarn
 报错：`Uncaught SyntaxError: The requested module '/node_modules/vue-demi/lib/index.mjs?v=701bef9f' does not provide an export named 'hasInjectionContext'`
 > pinia v2.1.X 版本要求 vue 3.3 或者 vue-demi latest ，目前 uniapp 的 vue 版本是 ^3.2.45，通过 pinia 降级到 2.0.X 可以运行和使用。
 
+## 感谢
+
+- [vitesse](https://github.dev/antfu/vitesse)
+- [uni-helper](https://github.com/uni-helper)
+- [uni-vitesse](https://github.dev/Ares-Chang/uni-vitesse)
