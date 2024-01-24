@@ -32,7 +32,7 @@
 
 - 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
 
-- 🦾 TypeScript, 当然
+- 🦾 TypeScript, 为什么不呢
 
 - ⚙️ 使用 [Vitest](https://github.com/vitest-dev/vitest) 进行单元测试
 
@@ -81,6 +81,6 @@ yarn
 
 ## 感谢
 
-- [vitesse](https://github.dev/antfu/vitesse)
+- [vitesse](https://github.com/antfu/vitesse)
 - [uni-helper](https://github.com/uni-helper)
-- [uni-vitesse](https://github.dev/Ares-Chang/uni-vitesse)
+- [uni-vitesse](https://github.com/Ares-Chang/uni-vitesse)
