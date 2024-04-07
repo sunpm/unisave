@@ -41,12 +41,10 @@ const radiolist1 = ref(
   [{
     name: '苹果',
     disabled: false,
-  },
-  {
+  }, {
     name: '香蕉',
     disabled: false,
-  },
-  {
+  }, {
     name: '橙子',
     disabled: false,
   }, {
@@ -66,10 +64,12 @@ function sexSelect(e: typeof actions.value[number]) {
   form1.value?.validateField('userInfo.sex')
 }
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 function groupChange(n: typeof radiolist1.value[number]['name']) {
   // console.log('groupChange', n)
 }
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 function radioChange(n: typeof radiolist1.value[number]['name']) {
   // console.log('radioChange', n)
 }
@@ -78,7 +78,7 @@ function radioChange(n: typeof radiolist1.value[number]['name']) {
 <template>
   <view>
     <!-- 注意，如果需要兼容微信小程序，最好通过setRules方法设置rules规则 -->
-    <u--form
+    <u-form
       ref="form1"
       label-position="left"
       :model="model1"
@@ -89,7 +89,7 @@ function radioChange(n: typeof radiolist1.value[number]['name']) {
         prop="userInfo.name"
         border-bottom
       >
-        <u--input
+        <u-input
           v-model="model1.userInfo.name"
           border="none"
         />
@@ -127,7 +127,7 @@ function radioChange(n: typeof radiolist1.value[number]['name']) {
           />
         </u-radio-group>
       </u-form-item>
-    </u--form>
+    </u-form>
     <u-action-sheet
       :show="showSex"
       :actions="actions"

@@ -16,7 +16,6 @@
 |:--:| :--: | :--: | :--------: | :--------: | :--------: | :----------: |
 | √  |  √   |  √   |     √      |     √      |     √      |      √       |
 
-
 ## 特性
 - 🗂 [基于文件的路由](./src/pages)
 
@@ -58,7 +57,6 @@
 - [ESLint](https://eslint.org/) 配置为 [@antfu/eslint-config](https://github.com/antfu/eslint-config) - 单引号, 无分号...
   - [@unocss/eslint-config](https://unocss.dev/integrations/eslint) - 用于UnoCSS的ESLint配置
   - [@uni-helper/eslint-config](https://github.com/uni-helper/eslint-config) - 适用于 uni-app 的 Anthony's ESLint 配置预设
-
 
 ## 环境建议
 
