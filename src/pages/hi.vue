@@ -22,10 +22,6 @@ defineProps<{ name: string }>()
   </div>
 </template>
 
-<style scoped>
-
-</style>
-
 <route lang="yaml">
 layout: 'home'
 </route>
