@@ -1,23 +1,23 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "sourceMap": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
       ]
     },
-    "lib": [
-      "esnext",
-      "dom"
-    ],
     "types": [
       "@dcloudio/types",
       "@ttou/uview-typings/v3",
       "@ttou/uview-typings/refs",
       "pinia-plugin-persist-uni"
-    ]
+    ],
+    "sourceMap": true
   },
   "include": [
     "src/**/*.ts",
