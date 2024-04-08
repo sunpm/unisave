@@ -16,7 +16,7 @@ defineProps<{ name: string }>()
     <div my-4>
       <u-button
         text="Back" h="!7" w="!15" type="success" text-sm
-        @click="router.push('/')"
+        @click="router.back()"
       />
     </div>
   </div>
