@@ -12,27 +12,38 @@ dayjs.extend(customParseFormat)
 export type dayJsDate = string | number | Date
 
 // 判断时间戳是否毫秒
-export function isMillisecond(timeStamp: dayJsDate) {
-  const timeStr = String(timeStamp)
-  return timeStr.length > 10
+export function isMillisecondTimestamp(value: dayJsDate) {
+  if (typeof value !== 'number' || value.toString().length !== 13)
+    return false
+
+  const date = new Date(value)
+  return !Number.isNaN(date.getTime())
+}
+
+// 转换为 dayjs 接收参数
+export function convertToDayjsParam(value: dayJsDate) {
+  if (isMillisecondTimestamp(value))
+    return value
+
+  if (isNumber(value))
+    return value * 1000
+
+  return value
 }
 
 export function stringFormat(date: string, format: string) {
   return dayjs(date, format)
 }
 
-export function formatCalendar(date?: dayJsDate) {
+export function formatCalendar(date: dayJsDate) {
   return formatTime(date, 'MM-DD')
 }
 
 export function formatTime(date?: dayJsDate, format = 'YYYY-MM-DD') {
   if (!date)
     return ''
-  // 判断时间戳是否毫秒
-  if (!isMillisecond(date) && isNumber(date))
-    date *= 1000
 
-  return dayjs(date).format(format)
+  return dayjs(convertToDayjsParam(date)).format(format)
 }
 
 // 将时间戳格式化成完整的时间字符串
@@ -41,13 +52,7 @@ export function formatFullTime(date?: dayJsDate) {
 }
 
 export function diffDate(start: dayJsDate, end: dayJsDate, unit: dayjs.OpUnitType = 'day') {
-  if (!isMillisecond(start) && isNumber(start))
-    start *= 1000
-
-  if (!isMillisecond(end) && isNumber(end))
-    end *= 1000
-
-  return dayjs(start).diff(dayjs(end), unit)
+  return dayjs(convertToDayjsParam(start)).diff(dayjs(convertToDayjsParam(end)), unit)
 }
 
 // 获取今天和明天的日期
