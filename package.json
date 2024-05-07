@@ -75,6 +75,7 @@
     "@iconify-json/carbon": "^1.1.27",
     "@mini-types/alipay": "^3.0.14",
     "@ttou/uview-typings": "^2.0.5",
+    "@types/baidu-app": "^2.2.7",
     "@uni-helper/eslint-config": "^0.0.6",
     "@uni-helper/uni-app-types": "^0.5.12",
     "@uni-helper/unocss-preset-uni": "^0.2.5",
