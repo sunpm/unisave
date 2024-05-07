@@ -1598,6 +1598,11 @@
     terser "^5.4.0"
     unplugin-auto-import "^0.16.7"
 
+"@douyin-microapp/typings@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmmirror.com/@douyin-microapp/typings/-/typings-1.2.2.tgz#314de3de376bca9e76725b60f56f62da1eed618e"
+  integrity sha512-FiGQOn6zaxcx2NPP9qO/zJzpElO6Qazwe8OuDqJ7uBmwJj8M8rDA8pp1LQ9f9UOb5LNUyTTquVc3IqlSDk6hjw==
+
 "@es-joy/jsdoccomment@~0.41.0":
   version "0.41.0"
   resolved "https://registry.npmmirror.com/@es-joy/jsdoccomment/-/jsdoccomment-0.41.0.tgz#4a2f7db42209c0425c71a1476ef1bdb6dcd836f6"
@@ -2377,6 +2382,24 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
+
+"@mini-types/alipay@^3.0.14":
+  version "3.0.14"
+  resolved "https://registry.npmmirror.com/@mini-types/alipay/-/alipay-3.0.14.tgz#7c2e6b88fb9f429c6bf78e84d94fe0707dda8b2c"
+  integrity sha512-FakzSsKvybtWlEIVTIRlr89kuQFn+XY86Ho9VUFFaKLplhW6Wx8FUxTDE7IzV7B9rT8DP/Icy637vUHlXPsw1g==
+  dependencies:
+    "@mini-types/global" "3.0.14"
+    "@mini-types/my" "3.0.14"
+
+"@mini-types/global@3.0.14":
+  version "3.0.14"
+  resolved "https://registry.npmmirror.com/@mini-types/global/-/global-3.0.14.tgz#f15544ac93efb1f9f33f9fb97848592363d8f487"
+  integrity sha512-St2ucFRfKRskposOqV/9iNJTKn1MbyqDypQiy/0DaVJjEm2MFi82RJjX9sBz1uWhQIqzu741PgTjGSy7L/Qj9g==
+
+"@mini-types/my@3.0.14":
+  version "3.0.14"
+  resolved "https://registry.npmmirror.com/@mini-types/my/-/my-3.0.14.tgz#1f594997b2dae9e0b843938d467d8b62e33e5ea1"
+  integrity sha512-aEgmM+rbEvEzTvqltCFRAg/h6KKs14M1y+FrOkz+hn2EyNpOVPesUzTjbRhSiFFsE3WdfBh54lHNYBahAmHq7w==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -6090,6 +6113,11 @@ kolorist@^1.8.0:
   resolved "https://registry.npmmirror.com/kolorist/-/kolorist-1.8.0.tgz#edddbbbc7894bc13302cdf740af6374d4a04743c"
   integrity sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==
 
+ks-miniprogram-types@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmmirror.com/ks-miniprogram-types/-/ks-miniprogram-types-1.1.0.tgz#bd16a29b86639e82442d98152c2fe3d0c30b1094"
+  integrity sha512-PIaKnp+MwY2bVXw54u1ahUbb9p6RElVK25Z1gbyvKA3W86cI4OMVEglPi1ENFpyyHJl0qwxsc/c6/3dNeEhtfg==
+
 lcid@^3.0.0:
   version "3.1.1"
   resolved "https://registry.npmmirror.com/lcid/-/lcid-3.1.1.tgz#9030ec479a058fc36b5e8243ebaac8b6ac582fd0"
@@ -6403,6 +6431,11 @@ minipass@^5.0.0:
   version "7.0.4"
   resolved "https://registry.npmmirror.com/minipass/-/minipass-7.0.4.tgz#dbce03740f50a4786ba994c1fb908844d27b038c"
   integrity sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==
+
+miniprogram-api-typings@^3.12.2:
+  version "3.12.2"
+  resolved "https://registry.npmmirror.com/miniprogram-api-typings/-/miniprogram-api-typings-3.12.2.tgz#88f9a43e5a7ab9162d848feee0e876f9bae52585"
+  integrity sha512-OJB2uVAfhycX4teG/zEVpoThushQqLOx946XACDpVc6OQydiJWjn7djVzvNCbv0VOA7sbHGPQp/RkXD9vMCDEw==
 
 minizlib@^2.1.1:
   version "2.1.2"

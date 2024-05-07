@@ -1,5 +1,8 @@
 /// <reference types="vite/client" />
 
+declare const swan: any
+declare const WeixinJSBridge: any
+
 declare module '*.vue' {
   import type { DefineComponent } from 'vue'
 
