@@ -1,6 +1,7 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
+    "sourceMap": true,
     "lib": [
       "esnext",
       "dom"
@@ -13,11 +14,19 @@
     },
     "types": [
       "@dcloudio/types",
+      "@uni-helper/uni-app-types",
       "@ttou/uview-typings/v3",
       "@ttou/uview-typings/refs",
-      "pinia-plugin-persist-uni"
-    ],
-    "sourceMap": true
+      "pinia-plugin-persist-uni",
+      //      微信小程序 TypeScript 声明文件。
+      "miniprogram-api-typings",
+      //      支付宝小程序 TypeScript 声明文件。
+      "@mini-types/alipay",
+      //      字节小程序 TypeScript 声明文件。
+      "@douyin-microapp/typings",
+      //      快手小程序 TypeScript 声明文件。
+      "ks-miniprogram-types/global"
+    ]
   },
   "include": [
     "src/**/*.ts",
@@ -26,5 +35,9 @@
     "src/**/*.vue",
     "./auto-imports.d.ts"
   ],
-  "exclude": ["dist", "node_modules"]
+  "exclude": [
+    "dist",
+    "node_modules",
+    "unpackage"
+  ]
 }
