@@ -8228,10 +8228,10 @@ utils-merge@1.0.1:
   resolved "https://registry.npmmirror.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
 
-uview-plus@^3.1.41:
-  version "3.1.41"
-  resolved "https://registry.npmmirror.com/uview-plus/-/uview-plus-3.1.41.tgz#cac0ae2e62260ded60a8d2f1a969df87308d0888"
-  integrity sha512-xmbV8JK73GOKZXdpzj9Dm0VCE6cIc7nchyutF33SeixCXpRr4A5Y/QuDyFEg4Vzr/lgNVvml43Ayfq9Mm1a5AQ==
+uview-plus@^3.2.16:
+  version "3.2.16"
+  resolved "https://registry.npmmirror.com/uview-plus/-/uview-plus-3.2.16.tgz#c658646aa9cfbf735a0a01b73c09ff790cdf2214"
+  integrity sha512-zNWwK1d5oluncTwhNW0EbQ1GJtqpnWvoRKG3zjXyF/YR25PkrGHKUYlM+RArKaHK0YQK04FOvJGh/8lOAjdLcw==
   dependencies:
     clipboard "^2.0.11"
     dayjs "^1.11.3"

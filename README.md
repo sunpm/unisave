@@ -38,7 +38,7 @@
 ## 预配置
 
 ### UI 框架
-- [uview-plus](https://uiadmin.net/uview-plus) uview-plus3.0是基于uView2.x修改的vue3版本
+- [uview-plus](uview-plus.jiangruyi.com) uview-plus3.0是基于uView2.x修改的vue3版本
 - [UnoCSS](https://github.com/unocss/unocss) 高性能且极具灵活性的即时原子化 CSS 引擎
 - [unocss-preset-uni](https://github.com/uni-helper/unocss-preset-uni) 专为 uni-app 打造的 UnoCSS 预设
 
