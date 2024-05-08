@@ -6,6 +6,7 @@ import UnoCSS from 'unocss/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import AutoImport from 'unplugin-auto-import/vite'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
+import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
@@ -56,6 +57,11 @@ export default defineConfig({
     Components({
       dts: 'src/components.d.ts',
     }),
+    /**
+     * 使用 TypeScript 编写 uni-app 的 manifest.json。
+     * @see https://github.com/uni-helper/vite-plugin-uni-manifest
+     */
+    UniManifest(),
     uni(),
   ],
   /**
