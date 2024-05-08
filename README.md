@@ -50,6 +50,7 @@
   - [`vite-plugin-vue-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - 页面布局系统
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
+- [`@uni-helper/vite-plugin-uni-manifest`](https://github.com/uni-helper/vite-plugin-uni-manifest) - 使用 TypeScript 编写 `uni-app` 的 `manifest.json`。
 
 ### 编码风格
 
@@ -82,8 +83,14 @@ yarn
 
 ## 问题
 
+怎么修改了 `pages.json` 没效果？
+> 模版使用了 [`@uni-helper/vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages)插件依赖，需要在`pages.config.ts`配置，编译会生成至`pages.json`，详细[点我看文档](https://github.com/uni-helper/vite-plugin-uni-pages)
+
+怎么修改了 `manifest.json` 没效果？
+> 模版使用了[`@uni-helper/vite-plugin-uni-manifest`](https://github.com/uni-helper/vite-plugin-uni-manifest)插件依赖，需要在`manifest.config.ts`配置，编译会生成至`manifest.json`，新增了自动生成项目配置信息的方法，详细[点击查看代码](./manifest.config.ts)
+
 报错：`Uncaught SyntaxError: The requested module '/node_modules/vue-demi/lib/index.mjs?v=701bef9f' does not provide an export named 'hasInjectionContext'`
-> pinia v2.1.X 版本要求 vue 3.3 或者 vue-demi latest ，目前 uniapp 的 vue 版本是 ^3.2.45，通过 pinia 降级到 2.0.X 可以运行和使用。
+> pinia v2.1.X 版本要求 vue 3.3 或者 vue-demi latest ，如果 uniapp 的 vue 版本是 ^3.2.45，通过 pinia 降级到 2.0.X 可以运行和使用。
 
 ## 感谢
 
