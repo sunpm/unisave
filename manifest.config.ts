@@ -1,8 +1,8 @@
 import process from 'node:process'
 import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
 
-// 获取项目配置信息
-const projectConfig = getProjectConfig()
+// 获取项目名称， 不需要自动生成可将该变量与函数删除
+const projectName = getProjectName()
 
 export default defineManifestConfig({
   'name': 'vitesse-uniapp-vue3',
@@ -64,12 +64,12 @@ export default defineManifestConfig({
   'quickapp': {},
   /* 小程序特有相关 */
   'mp-weixin': {
-    appid: projectConfig.appid,
+    appid: 'testappid',
     setting: {
       urlCheck: false,
     },
     usingComponents: true,
-    projectname: projectConfig.projectname,
+    projectname: projectName,
   },
   'mp-alipay': {
     usingComponents: true,
@@ -84,21 +84,16 @@ export default defineManifestConfig({
 })
 
 /**
- * 自动生成项目配置信息
- * 当前模拟 return 单平台配置，可根据业务需求自行修改函数逻辑
+ * 自动生成项目名称
+ * 当前模拟 return 项目名称，可根据业务需求自行修改函数逻辑
  */
-function getProjectConfig() {
+function getProjectName(name?: string) {
   // 项目名称前缀，可根据业务需求自行修改环境与前缀
   const prefix = {
     development: 'dev',
     production: 'prod',
   }
-  // appid
-  const appid = '___test___appid___'
   // 项目名称
-  const projectname = 'vitesse-uniapp-vue3'
-  return {
-    appid,
-    projectname: `【${prefix[process.env.NODE_ENV]}】${projectname}`,
-  }
+  const projectname = name ?? 'vitesse-uniapp-vue3'
+  return `【${prefix[process.env.NODE_ENV]}】${projectname}`
 }

@@ -46,12 +46,12 @@
   },
   "quickapp": {},
   "mp-weixin": {
-    "appid": "___test___appid___",
+    "appid": "testappid",
     "setting": {
       "urlCheck": false
     },
     "usingComponents": true,
-    "projectname": "【prod】vitesse-uniapp-vue3"
+    "projectname": "【dev】vitesse-uniapp-vue3"
   },
   "mp-alipay": {
     "usingComponents": true
