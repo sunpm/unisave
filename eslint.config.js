@@ -9,7 +9,7 @@ module.exports = uni(
       },
     },
     ignores: [
-      './src/**/*.js',
+      'src/**/*.js',
     ],
   },
   unocss.configs.flat,
