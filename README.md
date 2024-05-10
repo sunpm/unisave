@@ -21,7 +21,7 @@
 
 - 📦 [组件自动化加载](./src/components)
 
-- 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org/)
+- 🍍 [使用 Pinia 的状态管理](https://github.com/vuejs/pinia)
 
 - 📑 [布局系统](./src/layouts)
 
@@ -38,7 +38,7 @@
 ## 预配置
 
 ### UI 框架
-- [uview-plus](uview-plus.jiangruyi.com) uview-plus3.0是基于uView2.x修改的vue3版本
+- [uview-plus](https://github.com/ijry/uview-plus) uview-plus3.0是基于uView2.x修改的vue3版本
 - [UnoCSS](https://github.com/unocss/unocss) 高性能且极具灵活性的即时原子化 CSS 引擎
 - [unocss-preset-uni](https://github.com/uni-helper/unocss-preset-uni) 专为 uni-app 打造的 UnoCSS 预设
 
@@ -54,8 +54,8 @@
 
 ### 编码风格
 
-- 使用 Composition API 地 [`<script setup>` SFC 语法](https://github.com/vuejs/rfcs/pull/227)
-- [ESLint](https://eslint.org/) 配置为 [@antfu/eslint-config](https://github.com/antfu/eslint-config) - 单引号, 无分号...
+- 使用 Composition API 地 [`<script setup>` SFC 语法](https://cn.vuejs.org/api/sfc-script-setup.html)
+- [ESLint](https://github.com/eslint/eslint) 配置为 [@antfu/eslint-config](https://github.com/antfu/eslint-config) - 单引号, 无分号...
   - [@unocss/eslint-config](https://unocss.dev/integrations/eslint) - 用于UnoCSS的ESLint配置
   - [@uni-helper/eslint-config](https://github.com/uni-helper/eslint-config) - 适用于 uni-app 的 Anthony's ESLint 配置预设
 
@@ -80,6 +80,18 @@ cd my-vitesse-uniapp-vue3
 yarn
 ```
 [//]: # (pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm)
+
+## 清单
+
+使用此模板时，请尝试按照清单正确更新您自己的信息
+
+- [ ] 在 `LICENSE` 中改变作者名或删除
+- [ ] 在 `manifest.config.ts` 中修改项目名称，描述，`appid` 等
+- [ ] 在 `vite.config.ts` 更改主机名
+- [ ] 移除 `.github` 文件夹中包含资助的信息
+- [ ] 整理 README 并删除演示页面和组件 
+
+紧接着, 享受吧 :)
 
 ## 问题
 
