@@ -73,5 +73,6 @@ export default defineConfig({
   // @ts-expect-error
   test: {
     environment: 'jsdom',
+    setupFiles: [resolve(__dirname, './test/setupTests.ts')],
   },
 })
