@@ -71,15 +71,15 @@
 
 **Node >= 18**
 
-[//]: # (**pnpm 8**)
+**pnpm 8**
 
 ## 使用该模版
 ```sh
 npx degit sunpm/vitesse-uniapp-vue3#main my-vitesse-uniapp-vue3
 cd my-vitesse-uniapp-vue3
-yarn
+pnpm install
 ```
-[//]: # (pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm)
+如果你没装过 pnpm, 可以先运行: `npm install -g pnpm`
 
 ## 清单
 
