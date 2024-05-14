@@ -1,8 +1,8 @@
 import dayjs from 'dayjs'
 
+// 导入本地化语言
 import 'dayjs/locale/zh-cn'
 
-// 导入本地化语言
 import customParseFormat from 'dayjs/plugin/customParseFormat'
 import { isNumber } from '../'
 
@@ -22,10 +22,7 @@ export function isMillisecondTimestamp(value: dayJsDate) {
 
 // 转换为 dayjs 接收参数
 export function convertToDayjsParam(value: dayJsDate) {
-  if (isMillisecondTimestamp(value))
-    return value
-
-  if (isNumber(value))
+  if (!isMillisecondTimestamp(value) && isNumber(value))
     return value * 1000
 
   return value
