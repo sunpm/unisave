@@ -1,14 +1,14 @@
 import un, { type UnConfig } from '@uni-helper/uni-network'
 import { Loading } from './loading'
 import { handleError } from './helper'
-import { showToast } from '@/utils'
+import { getHttpUrl, showToast } from '@/utils'
 
 export * from './helper'
 
 // 文档：https://uni-network.netlify.app/
 export const instance = un.create({
   // h5 需要添加代理，有需要可自行判断环境后处理
-  baseUrl: import.meta.env.VITE_HTTP_URL,
+  baseUrl: getHttpUrl(),
   // 统一请求方式 POST，后续可以在请求中传递 config 修改
   method: 'POST',
   headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
