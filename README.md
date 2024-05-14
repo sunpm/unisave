@@ -48,6 +48,7 @@
 - Router
   - [`@uni-helper/vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - 在 Vite 驱动的 uni-app 上使用基于文件的路由系统
   - [`vite-plugin-vue-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - 页面布局系统
+  - [`@uni-helper/uni-use`(https://github.com/uni-helper/uni-use)] - 使用 `useRouter` 封装路由方法 -> `src/composables/useNavigation.ts`
 - 请求
   - [`@uni-helper/uni-network`](https://github.com/uni-helper/uni-network) - 为 uni-app 打造的基于 Promise 的 HTTP 客户端
   - `services` 目录封装通用请求
