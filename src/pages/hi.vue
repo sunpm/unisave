@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { useRouter } from '@uni-helper/uni-use'
+
 defineProps<{ name: string }>()
+
+const { back } = useRouter()
 </script>
 
 <template>
@@ -16,7 +20,7 @@ defineProps<{ name: string }>()
     <div my-4>
       <u-button
         text="Back" h="!7" w="!15" type="success" text-sm
-        @click="router.back()"
+        @click="back()"
       />
     </div>
   </div>

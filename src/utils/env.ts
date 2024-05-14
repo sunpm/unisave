@@ -16,6 +16,9 @@ export const prodMode = 'production'
 export function getEnv(): string {
   return import.meta.env.MODE
 }
+export function getHttpUrl(): string {
+  return import.meta.env.VITE_HTTP_URL
+}
 
 /**
  * @description: Is it a development mode

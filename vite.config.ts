@@ -1,6 +1,7 @@
 /// <reference types="vitest" />
 import { resolve } from 'node:path'
-import { defineConfig } from 'vite'
+import process from 'node:process'
+import { defineConfig, loadEnv } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
 import UnoCSS from 'unocss/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
@@ -10,69 +11,82 @@ import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  resolve: {
-    alias: [
-      {
-        find: '@',
-        replacement: resolve(__dirname, 'src'),
+export default defineConfig((configEnv) => {
+  const viteEnv = loadEnv(configEnv.mode, process.cwd())
+  const { VITE_BASE_API, VITE_HTTP_URL } = viteEnv
+
+  return {
+    resolve: {
+      alias: [
+        {
+          find: '@',
+          replacement: resolve(__dirname, 'src'),
+        },
+      ],
+    },
+    server: {
+      proxy: {
+        // 请求代理
+        [VITE_BASE_API]: {
+          target: VITE_HTTP_URL,
+          secure: false,
+          changeOrigin: true,
+          rewrite: path => path.replace(VITE_BASE_API, VITE_BASE_API), // 不可以省略rewrite
+        },
       },
-    ],
-  },
-  plugins: [
+    },
+    plugins: [
     /**
      * unocss
      * @see https://github.com/antfu/unocss
      * see unocss.config.ts for config
      */
-    UnoCSS(),
-    UniPages(),
+      UnoCSS(),
+      UniPages(),
+      /**
+       * unplugin-auto-import 按需 import
+       * @see https://github.com/antfu/unplugin-auto-import
+       */
+      AutoImport({
+        imports: [
+          'vue',
+          'pinia',
+          'uni-app',
+        ],
+        dts: true,
+        dirs: [
+          './src/composables',
+          './src/stores',
+        ],
+        vueTemplate: true,
+      }),
+      /**
+       * vite-plugin-uni-layouts
+       * @see https://github.com/uni-helper/vite-plugin-uni-layouts
+       */
+      UniLayouts(),
+      /**
+       * unplugin-vue-components 按需引入组件
+       * 注意：需注册至 uni 之前，否则不会生效
+       * @see https://github.com/antfu/vite-plugin-components
+       */
+      Components({
+        dts: 'src/components.d.ts',
+      }),
+      /**
+       * 使用 TypeScript 编写 uni-app 的 manifest.json。
+       * @see https://github.com/uni-helper/vite-plugin-uni-manifest
+       */
+      UniManifest(),
+      uni(),
+    ],
     /**
-     * unplugin-auto-import 按需 import
-     * @see https://github.com/antfu/unplugin-auto-import
+     * Vitest
+     * @see https://github.com/vitest-dev/vitest
      */
-    AutoImport({
-      imports: [
-        'vue',
-        'pinia',
-        'uni-app',
-      ],
-      dts: true,
-      dirs: [
-        './src/composables',
-        './src/store',
-      ],
-      vueTemplate: true,
-    }),
-    /**
-     * vite-plugin-uni-layouts
-     * @see https://github.com/uni-helper/vite-plugin-uni-layouts
-     */
-    UniLayouts(),
-    /**
-     * unplugin-vue-components 按需引入组件
-     * 注意：需注册至 uni 之前，否则不会生效
-     * @see https://github.com/antfu/vite-plugin-components
-     */
-    Components({
-      dts: 'src/components.d.ts',
-    }),
-    /**
-     * 使用 TypeScript 编写 uni-app 的 manifest.json。
-     * @see https://github.com/uni-helper/vite-plugin-uni-manifest
-     */
-    UniManifest(),
-    uni(),
-  ],
-  /**
-   * Vitest
-   * @see https://github.com/vitest-dev/vitest
-   */
-  // vite升级到4.0.4后，该配置不会报错，但是因为众所周知的问题，uniapp 的 vite 能不升级还是不要动
-  // eslint-disable-next-line ts/ban-ts-comment
-  // @ts-expect-error
-  test: {
-    environment: 'jsdom',
-    setupFiles: [resolve(__dirname, './test/setupTests.ts')],
-  },
+    test: {
+      environment: 'jsdom',
+      setupFiles: [resolve(__dirname, './test/setupTests.ts')],
+    },
+  }
 })

@@ -46,7 +46,9 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "./auto-imports.d.ts"
+
+    "./auto-imports.d.ts",
+    "./uni-pages.d.ts"
   ],
   "exclude": [
     "dist",

@@ -1,8 +1,14 @@
 <script setup lang="ts">
+import { useNavigation } from '@/composables'
+
+const { navigateToHi } = useNavigation()
 const name = ref('')
 function go() {
-  if (name.value)
-    router.push(`/pages/hi?name=${encodeURIComponent(name.value)}`)
+  if (name.value) {
+    navigateToHi({
+      name: encodeURIComponent(name.value),
+    })
+  }
 }
 </script>
 
