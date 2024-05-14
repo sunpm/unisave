@@ -87,8 +87,8 @@ pnpm install
 
 - [ ] 在 `LICENSE` 中改变作者名或删除
 - [ ] 在 `manifest.config.ts` 中修改项目名称，描述，`appid` 等
-- [ ] 在 `vite.config.ts` 更改主机名
-- [ ] 移除 `.github` 文件夹中包含资助的信息
+- [ ] 在 `.env.*` 更改环境变量
+- [ ] 不需要部署到 netlify 请移除 `.netlify.toml` 文件
 - [ ] 整理 README 并删除演示页面和组件 
 
 紧接着, 享受吧 :)
