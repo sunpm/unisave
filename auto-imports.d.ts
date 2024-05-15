@@ -68,7 +68,7 @@ declare global {
   const onUnload: typeof import('@dcloudio/uni-app')['onUnload']
   const onUnmounted: typeof import('vue')['onUnmounted']
   const onUpdated: typeof import('vue')['onUpdated']
-  const pinia: typeof import('./src/store/index')['pinia']
+  const pinia: typeof import('./src/stores/index')['pinia']
   const provide: typeof import('vue')['provide']
   const reactive: typeof import('vue')['reactive']
   const readonly: typeof import('vue')['readonly']
@@ -87,9 +87,10 @@ declare global {
   const triggerRef: typeof import('vue')['triggerRef']
   const unref: typeof import('vue')['unref']
   const useAttrs: typeof import('vue')['useAttrs']
-  const useCountStore: typeof import('./src/store/modules/count')['useCountStore']
+  const useCountStore: typeof import('./src/stores/modules/count')['useCountStore']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
+  const useNavigation: typeof import('./src/composables/useNavigation')['useNavigation']
   const useSlots: typeof import('vue')['useSlots']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
@@ -105,6 +106,7 @@ declare global {
 // for vue template auto import
 import { UnwrapRef } from 'vue'
 declare module 'vue' {
+  interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
@@ -169,7 +171,7 @@ declare module 'vue' {
     readonly onUnload: UnwrapRef<typeof import('@dcloudio/uni-app')['onUnload']>
     readonly onUnmounted: UnwrapRef<typeof import('vue')['onUnmounted']>
     readonly onUpdated: UnwrapRef<typeof import('vue')['onUpdated']>
-    readonly pinia: UnwrapRef<typeof import('./src/store/index')['pinia']>
+    readonly pinia: UnwrapRef<typeof import('./src/stores/index')['pinia']>
     readonly provide: UnwrapRef<typeof import('vue')['provide']>
     readonly reactive: UnwrapRef<typeof import('vue')['reactive']>
     readonly readonly: UnwrapRef<typeof import('vue')['readonly']>
@@ -188,9 +190,10 @@ declare module 'vue' {
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
-    readonly useCountStore: UnwrapRef<typeof import('./src/store/modules/count')['useCountStore']>
+    readonly useCountStore: UnwrapRef<typeof import('./src/stores/modules/count')['useCountStore']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
+    readonly useNavigation: UnwrapRef<typeof import('./src/composables/useNavigation')['useNavigation']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
@@ -199,6 +202,7 @@ declare module 'vue' {
   }
 }
 declare module '@vue/runtime-core' {
+  interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
@@ -263,7 +267,7 @@ declare module '@vue/runtime-core' {
     readonly onUnload: UnwrapRef<typeof import('@dcloudio/uni-app')['onUnload']>
     readonly onUnmounted: UnwrapRef<typeof import('vue')['onUnmounted']>
     readonly onUpdated: UnwrapRef<typeof import('vue')['onUpdated']>
-    readonly pinia: UnwrapRef<typeof import('./src/store/index')['pinia']>
+    readonly pinia: UnwrapRef<typeof import('./src/stores/index')['pinia']>
     readonly provide: UnwrapRef<typeof import('vue')['provide']>
     readonly reactive: UnwrapRef<typeof import('vue')['reactive']>
     readonly readonly: UnwrapRef<typeof import('vue')['readonly']>
@@ -282,9 +286,10 @@ declare module '@vue/runtime-core' {
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
-    readonly useCountStore: UnwrapRef<typeof import('./src/store/modules/count')['useCountStore']>
+    readonly useCountStore: UnwrapRef<typeof import('./src/stores/modules/count')['useCountStore']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
+    readonly useNavigation: UnwrapRef<typeof import('./src/composables/useNavigation')['useNavigation']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
