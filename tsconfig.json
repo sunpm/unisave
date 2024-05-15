@@ -41,6 +41,9 @@
       "@types/baidu-app"
     ]
   },
+  "vueCompilerOptions": {
+    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
+  },
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
