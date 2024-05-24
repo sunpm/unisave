@@ -5,7 +5,9 @@ import { getHttpUrl, showToast } from '@/utils'
 
 export * from './helper'
 
-// 文档：https://uni-network.netlify.app/
+/**
+ * @see 文档：https://uni-network.netlify.app/
+ */
 export const instance = un.create({
   // h5 需要添加代理，有需要可自行判断环境后处理
   baseUrl: getHttpUrl(),
