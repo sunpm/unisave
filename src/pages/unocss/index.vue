@@ -9,7 +9,3 @@
     点我 / 将鼠标 hover
   </view>
 </template>
-
-<style>
-
-</style>
