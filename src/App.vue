@@ -14,5 +14,5 @@ onHide(() => {
 
 <style lang="scss">
 /* 注意要写在第一行，同时给style标签加入lang="scss"属性 */
-@import url("uview-plus/index");
+@import "uview-plus/index";
 </style>

@@ -138,7 +138,3 @@ function radioChange(n: typeof radiolist1.value[number]['name']) {
     />
   </view>
 </template>
-
-<style>
-
-</style>

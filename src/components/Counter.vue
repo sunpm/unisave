@@ -15,7 +15,3 @@ const { count } = storeToRefs(useCountStore())
     </div>
   </div>
 </template>
-
-<style scoped>
-
-</style>

@@ -32,7 +32,3 @@ function go() {
     </div>
   </div>
 </template>
-
-<style scoped>
-
-</style>

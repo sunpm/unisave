@@ -8,7 +8,3 @@
     <a i-carbon-logo-github icon-btn href="https://github.com/sunpm/vitesse-uniapp-vue3" target="_blank" />
   </div>
 </template>
-
-<style scoped>
-
-</style>

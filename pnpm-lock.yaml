@@ -171,15 +171,15 @@ importers:
       stylelint:
         specifier: ^16.6.1
         version: 16.6.1(typescript@4.9.5)
+      stylelint-config-recommended:
+        specifier: ^14.0.0
+        version: 14.0.0(stylelint@16.6.1(typescript@4.9.5))
       stylelint-config-recommended-scss:
         specifier: ^14.0.0
         version: 14.0.0(postcss@8.4.38)(stylelint@16.6.1(typescript@4.9.5))
-      stylelint-config-standard:
-        specifier: ^36.0.0
-        version: 36.0.0(stylelint@16.6.1(typescript@4.9.5))
-      stylelint-config-standard-vue:
-        specifier: ^1.0.0
-        version: 1.0.0(postcss-html@1.7.0)(stylelint@16.6.1(typescript@4.9.5))
+      stylelint-config-recommended-vue:
+        specifier: ^1.5.0
+        version: 1.5.0(postcss-html@1.7.0)(stylelint@16.6.1(typescript@4.9.5))
       stylelint-order:
         specifier: ^6.0.4
         version: 6.0.4(stylelint@16.6.1(typescript@4.9.5))
@@ -5485,19 +5485,6 @@ packages:
     peerDependencies:
       stylelint: ^16.0.0
 
-  stylelint-config-standard-vue@1.0.0:
-    resolution: {integrity: sha512-wAzU7p6DSlo04pWfCbOcaMq09Nojt0FEsbdxhCBTdC7IguD9ZVl7FP/bvyA0HAHjZGC4JkW7m6WiQaoVMDSuFw==}
-    engines: {node: ^12 || >=14}
-    peerDependencies:
-      postcss-html: ^1.0.0
-      stylelint: '>=14.0.0'
-
-  stylelint-config-standard@36.0.0:
-    resolution: {integrity: sha512-3Kjyq4d62bYFp/Aq8PMKDwlgUyPU4nacXsjDLWJdNPRUgpuxALu1KnlAHIj36cdtxViVhXexZij65yM0uNIHug==}
-    engines: {node: '>=18.12.0'}
-    peerDependencies:
-      stylelint: ^16.1.0
-
   stylelint-order@6.0.4:
     resolution: {integrity: sha512-0UuKo4+s1hgQ/uAxlYU4h0o0HS4NiQDud0NAUNI0aa8FJdmYHA5ZZTFHiV5FpmE3071e9pZx5j0QpVJW5zOCUA==}
     peerDependencies:
@@ -7963,7 +7950,7 @@ snapshots:
       jest-util: 27.5.1
       jest-validate: 27.5.1
       jest-watcher: 27.5.1
-      micromatch: 4.0.5
+      micromatch: 4.0.7
       rimraf: 3.0.2
       slash: 3.0.0
       strip-ansi: 6.0.1
@@ -8064,7 +8051,7 @@ snapshots:
       jest-haste-map: 27.5.1
       jest-regex-util: 27.5.1
       jest-util: 27.5.1
-      micromatch: 4.0.5
+      micromatch: 4.0.7
       pirates: 4.0.6
       slash: 3.0.0
       source-map: 0.6.1
@@ -11617,7 +11604,7 @@ snapshots:
       jest-runner: 27.5.1
       jest-util: 27.5.1
       jest-validate: 27.5.1
-      micromatch: 4.0.5
+      micromatch: 4.0.7
       parse-json: 5.2.0
       pretty-format: 27.5.1
       slash: 3.0.0
@@ -11685,7 +11672,7 @@ snapshots:
       jest-serializer: 27.5.1
       jest-util: 27.5.1
       jest-worker: 27.5.1
-      micromatch: 4.0.5
+      micromatch: 4.0.7
       walker: 1.0.8
     optionalDependencies:
       fsevents: 2.3.3
@@ -11731,7 +11718,7 @@ snapshots:
       '@types/stack-utils': 2.0.3
       chalk: 4.1.2
       graceful-fs: 4.2.11
-      micromatch: 4.0.5
+      micromatch: 4.0.7
       pretty-format: 27.5.1
       slash: 3.0.0
       stack-utils: 2.0.6
@@ -13115,19 +13102,6 @@ snapshots:
   stylelint-config-recommended@14.0.0(stylelint@16.6.1(typescript@4.9.5)):
     dependencies:
       stylelint: 16.6.1(typescript@4.9.5)
-
-  stylelint-config-standard-vue@1.0.0(postcss-html@1.7.0)(stylelint@16.6.1(typescript@4.9.5)):
-    dependencies:
-      postcss-html: 1.7.0
-      stylelint: 16.6.1(typescript@4.9.5)
-      stylelint-config-html: 1.1.0(postcss-html@1.7.0)(stylelint@16.6.1(typescript@4.9.5))
-      stylelint-config-recommended-vue: 1.5.0(postcss-html@1.7.0)(stylelint@16.6.1(typescript@4.9.5))
-      stylelint-config-standard: 36.0.0(stylelint@16.6.1(typescript@4.9.5))
-
-  stylelint-config-standard@36.0.0(stylelint@16.6.1(typescript@4.9.5)):
-    dependencies:
-      stylelint: 16.6.1(typescript@4.9.5)
-      stylelint-config-recommended: 14.0.0(stylelint@16.6.1(typescript@4.9.5))
 
   stylelint-order@6.0.4(stylelint@16.6.1(typescript@4.9.5)):
     dependencies:
