@@ -26,9 +26,8 @@
     "types": [
       "@dcloudio/types",
       "@uni-helper/uni-app-types",
-      "@ttou/uview-typings/v3",
-      "@ttou/uview-typings/refs",
       "pinia-plugin-persist-uni",
+      "uview-plus/types",
       //      微信小程序
       "miniprogram-api-typings",
       //      支付宝小程序
