@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { _FormRef } from 'uview-plus/types/comps/form'
+
 const form1 = ref<_FormRef | null>(null)
 const showSex = ref(false)
 const model1 = ref({
