@@ -4,7 +4,6 @@ import process from 'node:process'
 import { defineConfig, loadEnv } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
 import UnoCSS from 'unocss/vite'
-import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import AutoImport from 'unplugin-auto-import/vite'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
@@ -42,7 +41,6 @@ export default defineConfig((configEnv) => {
      * see unocss.config.ts for config
      */
       UnoCSS(),
-      UniPages(),
       /**
        * unplugin-auto-import 按需 import
        * @see https://github.com/antfu/unplugin-auto-import
