@@ -8,7 +8,7 @@
   </view>
 </template>
 
-<route lang="yaml">
+<route lang="yaml" type="home">
 style:
   navigationBarTitleText: 首页
 </route>
