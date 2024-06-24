@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { usePageScroll } from '@uni-helper/uni-use'
-
-console.log(usePageScroll)
 </script>
 
 <template>
