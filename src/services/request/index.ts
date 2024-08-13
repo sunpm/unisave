@@ -1,6 +1,5 @@
 import un, { type UnConfig } from '@uni-helper/uni-network'
 import { Loading } from './loading'
-import { handleError } from './helper'
 import { getHttpUrl, showToast } from '@/utils'
 
 export * from './helper'
@@ -13,11 +12,9 @@ export const instance = un.create({
   baseUrl: getHttpUrl(),
   /**
    * TODO 由于小程序兼容性问题，统一请求方式 POST，根据业务需求在请求中传递 config 修改
-   * 例如：request({
-   *   config: {
-   *     method: 'GET'
-   *   }
-   * })
+   * 例如：request('', {}, {
+   *     method: 'GET',
+   *   })
    */
   method: 'POST',
   headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
@@ -43,8 +40,9 @@ instance.interceptors.response.use((response: any) => {
     return Promise.reject(response)
   }
   loading.hide(response.config.loading)
+  return response.data
   // TODO 返回数据根据业务需求修改
-  const { code, data, msg } = response.data
+  /* const { code, data, msg } = response.data
   if (code === 1)
     return data
 
@@ -52,7 +50,7 @@ instance.interceptors.response.use((response: any) => {
     title: msg,
   })
   handleError(response)
-  return Promise.reject(response.data)
+  return Promise.reject(response.data) */
 }, (error) => {
   loading.hide(error.config.loading)
   return Promise.reject(error)
