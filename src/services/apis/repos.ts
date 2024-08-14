@@ -3,7 +3,7 @@ import { request } from '../request'
 export interface GithubReposRes {
   name: string
   description: string
-  url: string
+  html_url: string
 }
 
 export async function fetchGithubRepos() {

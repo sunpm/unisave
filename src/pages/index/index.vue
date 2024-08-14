@@ -24,7 +24,7 @@ onLoad(() => {
       </h2>
       <p>{{ repos.name }}</p>
       <p>{{ repos.description }}</p>
-      <p>{{ repos.url }}</p>
+      <a icon-btn :href="repos.html_url" target="_blank">仓库地址</a>
     </view>
   </view>
 </template>
