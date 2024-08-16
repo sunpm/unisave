@@ -12,7 +12,7 @@
 </p>
 
 ## 平台兼容性
-在技术考量上，优先同时支持下列的平台，为兼容多个平台而舍弃一些实用的依赖插件。如发现下列平台环境开发编译出现问题，欢迎提 [issue](https://github.com/sunpm/vitesse-uniapp-vue3/issues/new) or [pr](https://github.com/sunpm/vitesse-uniapp-vue3/pulls)
+在技术考量上，优先同时支持下列的平台，为兼容多个平台而舍弃一些实用的依赖插件。如发现下列平台环境开发编译出现问题，欢迎提 [issue](https://github.com/sunpm/unisave/issues/new) or [pr](https://github.com/sunpm/unisave/pulls)
 
 | H5 | IOS  | 安卓 | 微信小程序 | 字节小程序 | 快手小程序 | 支付宝小程序 | 百度小程序 |
 |:--:| :--: | :--: | :--------: | :--------: | :--------: | :----------: | :----------: |
@@ -81,8 +81,8 @@
 
 ## 使用该模版
 ```sh
-npx degit sunpm/vitesse-uniapp-vue3#main my-vitesse-uniapp-vue3
-cd my-vitesse-uniapp-vue3
+npx degit sunpm/unisave#main my-unisave
+cd my-unisave
 pnpm install
 ```
 如果你没装过 pnpm, 可以先运行: `npm install -g pnpm`

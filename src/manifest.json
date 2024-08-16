@@ -1,5 +1,5 @@
 {
-  "name": "vitesse-uniapp-vue3",
+  "name": "unisave",
   "appid": "",
   "description": "",
   "versionName": "1.0.1",
@@ -51,7 +51,7 @@
       "urlCheck": false
     },
     "usingComponents": true,
-    "projectname": "【dev】vitesse-uniapp-vue3"
+    "projectname": "【dev】unisave"
   },
   "mp-alipay": {
     "usingComponents": true

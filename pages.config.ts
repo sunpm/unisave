@@ -15,7 +15,7 @@ export default defineUniPages({
     'navigationBarBackgroundColor': '#fff',
     'backgroundColor': '#fff',
     'navigationBarTextStyle': 'black',
-    'navigationBarTitleText': 'vitesse-uniapp-vue3',
+    'navigationBarTitleText': 'unisave',
     'app-plus': {
       titleNView: false, // 移除 H5、APP 顶部导航
     },

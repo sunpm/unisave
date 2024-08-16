@@ -7,7 +7,7 @@ export interface GithubReposRes {
 }
 
 export async function fetchGithubRepos() {
-  return await request<GithubReposRes>('/repos/sunpm/vitesse-uniapp-vue3', {}, {
+  return await request<GithubReposRes>('/repos/sunpm/unisave', {}, {
     method: 'GET',
   })
 }

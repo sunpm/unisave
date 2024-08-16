@@ -5,7 +5,7 @@ import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
 const projectName = getProjectName()
 
 export default defineManifestConfig({
-  'name': 'vitesse-uniapp-vue3',
+  'name': 'unisave',
   'appid': '',
   'description': '',
   'versionName': '1.0.1',
@@ -94,6 +94,6 @@ function getProjectName(name?: string) {
     production: 'prod',
   }
   // 项目名称
-  const projectname = name ?? 'vitesse-uniapp-vue3'
+  const projectname = name ?? 'unisave'
   return `【${prefix[process.env.NODE_ENV]}】${projectname}`
 }
