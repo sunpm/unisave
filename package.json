@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "engines": {
     "node": ">=18",
-    "pnpm": ">=9"
+    "pnpm": ">=8"
   },
   "scripts": {
     "dev:app": "uni -p app",
