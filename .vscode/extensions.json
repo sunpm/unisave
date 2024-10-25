@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "antfu.goto-alias",
+    "csstools.postcss",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "vue.volar",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
