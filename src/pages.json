@@ -37,5 +37,15 @@
       "titleNView": false
     }
   },
-  "subPackages": []
+  "subPackages": [
+    {
+      "root": "pages-sub",
+      "pages": [
+        {
+          "path": "sub",
+          "type": "page"
+        }
+      ]
+    }
+  ]
 }

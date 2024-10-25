@@ -19,3 +19,7 @@ dist
 *.njsproj
 *.sln
 *.sw?
+
+# cache
+.eslintcache
+.stylelintcache

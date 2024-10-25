@@ -1,5 +1,5 @@
-import { useRouter } from '@uni-helper/uni-use'
 import { getPathQueryString } from '@/utils'
+import { useRouter } from '@uni-helper/uni-use'
 
 const { navigate } = useRouter()
 

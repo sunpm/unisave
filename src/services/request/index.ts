@@ -1,6 +1,6 @@
+import { getHttpUrl, showToast } from '@/utils'
 import un, { type UnConfig } from '@uni-helper/uni-network'
 import { Loading } from './loading'
-import { getHttpUrl, showToast } from '@/utils'
 
 export * from './helper'
 

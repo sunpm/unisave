@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type GithubReposRes, fetchGithubRepos } from '@/services/apis/repos'
+import { fetchGithubRepos, type GithubReposRes } from '@/services/apis/repos'
 
 const repos = ref<GithubReposRes | null>(null)
 

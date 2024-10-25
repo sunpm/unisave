@@ -27,8 +27,9 @@ export function validate(form: Record<string, any>, rules: Record<string, Rule[]
           || (r.min && value.length < r.min)
           || (r.max && value.length > r.max)
           || (r.pattern && !new RegExp(r.pattern).test(value))
-        )
+        ) {
           return failValidate(r.message, cb, value, key)
+        }
       }
     }
   }
