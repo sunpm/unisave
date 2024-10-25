@@ -7,7 +7,6 @@ interface NavigateToOptions {
   url: "/pages/index/index" |
        "/pages/hi" |
        "/pages/unocss/index" |
-       "/pages/uview-plus/index" |
        "/pages-sub/sub";
 }
 interface RedirectToOptions extends NavigateToOptions {}

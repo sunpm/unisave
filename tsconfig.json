@@ -21,7 +21,7 @@
       "@dcloudio/types",
       "@uni-helper/uni-app-types",
       "pinia-plugin-persist-uni",
-      "uview-plus/types",
+      "nutui-uniapp/global.d.ts",
       //      微信小程序
       "miniprogram-api-typings",
       //      支付宝小程序

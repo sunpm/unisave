@@ -11,6 +11,7 @@ declare module 'vue' {
     Footer: typeof import('./components/Footer.vue')['default']
     InputEntry: typeof import('./components/InputEntry.vue')['default']
     Logos: typeof import('./components/Logos.vue')['default']
+    NutButton: typeof import('nutui-uniapp/components/button/button.vue')['NutButton']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
