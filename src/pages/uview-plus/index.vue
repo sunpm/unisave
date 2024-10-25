@@ -66,14 +66,12 @@ function sexSelect(e: typeof actions.value[number]) {
   form1.value?.validateField('userInfo.sex')
 }
 
-// eslint-disable-next-line unused-imports/no-unused-vars
 function groupChange(n: typeof radiolist1.value[number]['name']) {
-  // console.log('groupChange', n)
+  console.log('groupChange', n)
 }
 
-// eslint-disable-next-line unused-imports/no-unused-vars
 function radioChange(n: typeof radiolist1.value[number]['name']) {
-  // console.log('radioChange', n)
+  console.log('radioChange', n)
 }
 </script>
 
