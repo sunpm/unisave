@@ -42,7 +42,13 @@ export default defineConfig((configEnv) => {
      * see unocss.config.ts for config
      */
       UnoCSS(),
-      UniPages(),
+      UniPages({
+        // 忽略页面内组件目录
+        exclude: ['**/components/**/*.*'],
+        subPackages: [
+          'src/pages-sub',
+        ],
+      }),
       /**
        * unplugin-auto-import 按需 import
        * @see https://github.com/antfu/unplugin-auto-import
@@ -79,6 +85,14 @@ export default defineConfig((configEnv) => {
        */
       UniManifest(),
       uni(),
+      { // 自定义插件禁用vite:vue插件的devToolsEnabled，强制编译 vue 模板时 inline 为 true
+        name: 'fix-vite-plugin-vue',
+        configResolved(config) {
+          const plugin = config.plugins.find(p => p.name === 'vite:vue')
+          if (plugin && plugin.api && plugin.api.options)
+            plugin.api.options.devToolsEnabled = false
+        },
+      },
     ],
     /**
      * Vitest
