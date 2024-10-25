@@ -1,5 +1,5 @@
-import { defineConfig, presetIcons } from 'unocss'
 import { presetUni } from '@uni-helper/unocss-preset-uni'
+import { defineConfig, presetIcons } from 'unocss'
 
 export default defineConfig({
   shortcuts: [

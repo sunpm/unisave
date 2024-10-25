@@ -1,14 +1,15 @@
 /// <reference types="vitest" />
 import { resolve } from 'node:path'
 import process from 'node:process'
-import { defineConfig, loadEnv } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
-import UnoCSS from 'unocss/vite'
-import UniPages from '@uni-helper/vite-plugin-uni-pages'
-import AutoImport from 'unplugin-auto-import/vite'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
+import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import UnoCSS from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { defineConfig, loadEnv } from 'vite'
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig((configEnv) => {
@@ -36,11 +37,12 @@ export default defineConfig((configEnv) => {
       },
     },
     plugins: [
-    /**
-     * unocss
-     * @see https://github.com/antfu/unocss
-     * see unocss.config.ts for config
-     */
+      vueDevTools(),
+      /**
+       * unocss
+       * @see https://github.com/antfu/unocss
+       * see unocss.config.ts for config
+       */
       UnoCSS(),
       UniPages({
         // 忽略页面内组件目录

@@ -1,5 +1,5 @@
-import { describe, expect, it } from 'vitest'
 import { isFunction } from '@/utils'
+import { describe, expect, it } from 'vitest'
 
 describe('typeof', () => {
   it('isFunction', () => {

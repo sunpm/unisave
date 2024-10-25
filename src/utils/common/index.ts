@@ -1,2 +1,2 @@
-export * from './typeof'
 export * from './tools'
+export * from './typeof'

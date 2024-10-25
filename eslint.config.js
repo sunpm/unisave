@@ -9,7 +9,6 @@ module.exports = uni(
       },
     },
     ignores: [
-      'src/**/*.js',
       'pages.json',
       'manifest.json',
       '*.nvue',
@@ -25,8 +24,8 @@ module.exports = uni(
         ignores: ['pre', 'textarea', 'text'],
       }],
       '@typescript-eslint/no-unused-vars': 'error',
+      'no-unused-vars': 'off', // 未使用的变量显示警告
       'vue/prop-name-casing': 'off',
-      'no-unused-vars': 'warn', // 未使用的变量显示警告
       'no-async-promise-executor': 'off', // 允许 promise 参数回调中使用 async-await
     },
   },

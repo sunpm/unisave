@@ -2,27 +2,21 @@
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
-    "strict": true,
     "jsx": "preserve",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "importHelpers": true,
-    "allowSyntheticDefaultImports": true,
-    "useDefineForClassFields": true,
-    "resolveJsonModule": true,
     "lib": [
       "esnext",
       "dom"
     ],
+    "useDefineForClassFields": true,
     "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "node",
     "paths": {
       "@/*": [
         "./src/*"
       ]
     },
+    "resolveJsonModule": true,
     "types": [
       "@dcloudio/types",
       "@uni-helper/uni-app-types",
@@ -38,7 +32,13 @@
       "ks-miniprogram-types/global",
       //      百度小程序
       "@types/baidu-app"
-    ]
+    ],
+    "strict": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
   "vueCompilerOptions": {
     "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
