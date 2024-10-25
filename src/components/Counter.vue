@@ -9,9 +9,9 @@ const { count } = storeToRefs(useCountStore())
       下面数据已通过 pinia 存储并持久化，不信请刷新
     </div>
     <div flex="~ items-center">
-      <u-button h="!6" w="!12" type="success" text="-" @click="dec" />
+      <button h="!6" w="!12" type="success" text="-" @click="dec" />
       {{ count }}
-      <u-button h="!6" w="!12" type="success" text="+" @click="inc" />
+      <button h="!6" w="!12" type="success" text="+" @click="inc" />
     </div>
   </div>
 </template>

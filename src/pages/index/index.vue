@@ -17,7 +17,19 @@ onLoad(() => {
 <template>
   <view flex="~ col items-center justify-center" p-50px>
     <Logos />
-    <InputEntry />
+    <wd-button>主要按钮</wd-button>
+    <wd-button type="success">
+      成功按钮
+    </wd-button>
+    <wd-button type="info">
+      信息按钮
+    </wd-button>
+    <wd-button type="warning">
+      警告按钮
+    </wd-button>
+    <wd-button type="error">
+      危险按钮
+    </wd-button>
     <view v-if="repos" border="1 solid" mt-4>
       <h2>
         请求返回结果：

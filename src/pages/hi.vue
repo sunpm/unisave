@@ -18,7 +18,7 @@ const { back } = useRouter()
     <Counter />
 
     <div my-4>
-      <u-button
+      <button
         text="Back" h="!7" w="!15" type="success" text-sm
         @click="back()"
       />

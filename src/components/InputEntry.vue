@@ -25,7 +25,7 @@ function go() {
       />
     </div>
     <div flex="~ justify-center" m-3>
-      <u-button
+      <button
         text="GO" h="!7" w="!15" type="success" text-sm :disabled="!name"
         @click="go"
       />
