@@ -45,7 +45,8 @@
     "lint:fix": "eslint . --fix",
     "styleslint": "stylelint \"src/**/*.{css,scss,vue}\"",
     "styleslint:fix": "stylelint \"src/**/*.{css,scss,vue}\" --cache --fix",
-    "test": "vitest"
+    "test": "vitest",
+    "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-4020920240930001",
@@ -121,7 +122,6 @@
     "vue-tsc": "^1.0.24"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged",
-    "preserveUnused": true
+    "pre-commit": "pnpm lint-staged"
   }
 }
