@@ -7,7 +7,7 @@ const props = withDefaults(defineProps<Props>(), {
   name: 'sunpm',
 })
 
-console.log(props.name) // 路由没有参数，打印则是 undefined
+console.log('打印 name 参数', props.name) // 路由没有参数，打印则是 undefined
 </script>
 
 <template>
