@@ -7,7 +7,20 @@ const props = withDefaults(defineProps<Props>(), {
   name: 'sunpm',
 })
 
-console.log('打印 name 参数', props.name) // 路由没有参数，打印则是 undefined
+console.log('setup 打印 name 参数', props.name)
+
+onReady(() => {
+  console.log('onReady 打印 name 参数', props.name)
+})
+watch(() => props.name, () => {
+  console.log('watch 打印 name 参数', props.name)
+})
+watchEffect(() => {
+  console.log('watchEffect 打印 name 参数', props.name)
+})
+onUpdated(() => {
+  console.log('onUpdated 打印 name 参数', props.name)
+})
 </script>
 
 <template>
@@ -20,5 +33,5 @@ console.log('打印 name 参数', props.name) // 路由没有参数，打印则�
 
 <route lang="yaml" type="home">
 style:
-  navigationBarTitleText: 首页
+navigationBarTitleText: 首页
 </route>

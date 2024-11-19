@@ -10,9 +10,8 @@
     {
       "path": "pages/index/index",
       "type": "home",
-      "style": {
-        "navigationBarTitleText": "首页"
-      }
+      "style": null,
+      "navigationBarTitleText": "首页"
     },
     {
       "path": "pages/hi",
