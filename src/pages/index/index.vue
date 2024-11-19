@@ -1,31 +1,20 @@
 <script setup lang="ts">
-import { fetchGithubRepos, type GithubReposRes } from '@/services/apis/repos'
-
-const repos = ref<GithubReposRes | null>(null)
-
-async function getRepos() {
-  const result = await fetchGithubRepos()
-  repos.value = result
-  console.log(result)
+interface Props {
+  name?: string
 }
 
-onLoad(() => {
-  getRepos()
+const props = withDefaults(defineProps<Props>(), {
+  name: 'sunpm',
 })
+
+console.log(props.name) // 路由没有参数，打印则是 undefined
 </script>
 
 <template>
   <view flex="~ col items-center justify-center" p-50px>
-    <Logos />
-    <InputEntry />
-    <view v-if="repos" border="1 solid" mt-4>
-      <h2>
-        请求返回结果：
-      </h2>
-      <p>{{ repos.name }}</p>
-      <p>{{ repos.description }}</p>
-      <a icon-btn :href="repos.html_url" target="_blank">仓库地址</a>
-    </view>
+    <h2>
+      路由 props name：{{ name }}
+    </h2>
   </view>
 </template>
 
