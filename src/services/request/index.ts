@@ -69,3 +69,15 @@ export async function request<T, D = RequestData>(
 ) {
   return instance.request<T, D, T>({ url, data, ...config })
 }
+
+export function upload<T, D = RequestData>(
+  url: string,
+  data?: D,
+  config?: UnConfig<T, D>,
+) {
+  return instance.upload({
+    url,
+    data,
+    ...config,
+  })
+}
