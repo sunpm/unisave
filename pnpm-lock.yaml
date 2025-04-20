@@ -53,6 +53,9 @@ importers:
       '@dcloudio/uni-quickapp-webview':
         specifier: 3.0.0-4040520250104002
         version: 3.0.0-4040520250104002(@vueuse/core@9.13.0(vue@3.5.12(typescript@4.9.5)))(postcss@8.4.47)(rollup@4.24.0)(vue@3.5.12(typescript@4.9.5))(webpack-sources@3.2.3)
+      '@pmun/utils':
+        specifier: ^0.2.3
+        version: 0.2.3
       '@uni-helper/uni-network':
         specifier: ^0.19.3
         version: 0.19.3(@vueuse/core@9.13.0(vue@3.5.12(typescript@4.9.5)))(vue@3.5.12(typescript@4.9.5))
@@ -1724,6 +1727,9 @@ packages:
   '@pkgr/core@0.1.1':
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
+
+  '@pmun/utils@0.2.3':
+    resolution: {integrity: sha512-VCGxZkZRBkzKXg5QPSoGIfeWRCr8eBbeeShCJC9vSHsGC4ZTlNsow+iXXMHp/7M2zHgw32yr8v/WzsXU5f+YPQ==}
 
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
@@ -8447,6 +8453,10 @@ snapshots:
     optional: true
 
   '@pkgr/core@0.1.1': {}
+
+  '@pmun/utils@0.2.3':
+    dependencies:
+      dayjs: 1.11.13
 
   '@polka/url@1.0.0-next.28': {}
 

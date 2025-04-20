@@ -1,7 +1,7 @@
+import { isNumber } from '@pmun/utils'
 import dayjs from 'dayjs'
 import customParseFormat from 'dayjs/plugin/customParseFormat'
 
-import { isNumber } from '../'
 // 导入本地化语言
 import 'dayjs/locale/zh-cn'
 

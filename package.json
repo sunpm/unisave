@@ -64,6 +64,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-4040520250104002",
     "@dcloudio/uni-mp-xhs": "3.0.0-4040520250104002",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4040520250104002",
+    "@pmun/utils": "^0.2.3",
     "@uni-helper/uni-network": "^0.19.3",
     "@uni-helper/uni-use": "^0.19.14",
     "@vueuse/core": "9",

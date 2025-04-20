@@ -1,4 +1,4 @@
-import { isString } from '@/utils'
+import { isString } from '@pmun/utils'
 
 export function showToast(options: UniNamespace.ShowToastOptions | string) {
   let {
