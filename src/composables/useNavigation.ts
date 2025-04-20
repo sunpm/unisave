@@ -1,4 +1,4 @@
-import { getPathQueryString } from '@/utils'
+import { objectToQueryString } from '@pmun/utils'
 import { useRouter } from '@uni-helper/uni-use'
 
 const { navigate } = useRouter()
@@ -15,7 +15,8 @@ export function useNavigation() {
 }
 
 function navigateTo(path: NavigateToOptions['url'], params?: Record<string, any>) {
+  params = params ?? {}
   return navigate({
-    url: getPathQueryString(path, params),
+    url: path + (objectToQueryString(params) && `?${objectToQueryString(params)}`),
   })
 }

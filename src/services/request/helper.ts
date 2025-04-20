@@ -1,5 +1,5 @@
 import type { UnConfig } from '@uni-helper/uni-network'
-import { isObject } from '@/utils'
+import { isObject } from '@pmun/utils'
 
 // 定义自定义错误类型，可以添加更多自定义属性，根据业务需求修改
 interface CustomError {
