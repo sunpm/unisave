@@ -4,8 +4,8 @@
   >
     <slot />
     <Footer />
-    <div mx-auto mt-4 text-center text-sm opacity-50>
+    <view class="mx-auto mt-4 text-center text-sm opacity-50">
       [Home Layout]
-    </div>
+    </view>
   </main>
 </template>

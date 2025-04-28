@@ -1,11 +1,11 @@
 <template>
   <main
-    class="px-10 py-20 text-center"
+    class="p-10 text-center"
   >
     <slot />
     <Footer />
-    <div mx-auto mt-4 text-center text-sm opacity-50>
+    <view class="mx-auto mt-4 text-center text-sm opacity-50">
       [Default Layout]
-    </div>
+    </view>
   </main>
 </template>

@@ -7,23 +7,23 @@ const { back } = useRouter()
 </script>
 
 <template>
-  <div>
-    <div i-carbon-pedestrian inline-block animate-shake-x animate-duration-5000 text-4xl />
-    <h3 text-2xl font-500>
+  <view>
+    <view class="i-carbon-pedestrian inline-block animate-shake-x animate-duration-5000 text-4xl" />
+    <h3 us-text-2xl us-font-500>
       Hi,
     </h3>
-    <div text-xl>
+    <view us-text-xl>
       {{ name }}!
-    </div>
+    </view>
     <Counter />
 
-    <div my-4>
+    <view us-my-4>
       <u-button
-        text="Back" h="!7" w="!15" type="success" text-sm
+        text="Back" us-h="!7" us-w="!15" type="success" us-text-sm
         @click="back()"
       />
-    </div>
-  </div>
+    </view>
+  </view>
 </template>
 
 <route lang="yaml">
