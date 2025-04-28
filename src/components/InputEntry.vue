@@ -13,22 +13,22 @@ function go() {
 </script>
 
 <template>
-  <div>
-    <div>
+  <view>
+    <view>
       <up-input
         v-model="name"
         placeholder="What's your name?"
-        border="surround" input-align="center" bg="transparent"
-        outline="none active:none" p="x-4 y-2" m="t-5" w="250px"
+        border="surround" input-align="center" us-bg="transparent"
+        us-outline="none active:none" us-p="x-4 y-2" us-m="t-5" us-w="250px"
         confirm-type="go"
         @confirm="go"
       />
-    </div>
-    <div flex="~ justify-center" m-3>
+    </view>
+    <view us-flex="~ justify-center" us-m-3>
       <u-button
-        text="GO" h="!7" w="!15" type="success" text-sm :disabled="!name"
+        text="GO" us-h="!7" us-w="!15" type="success" us-text-sm :disabled="!name"
         @click="go"
       />
-    </div>
-  </div>
+    </view>
+  </view>
 </template>

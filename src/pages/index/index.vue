@@ -15,16 +15,16 @@ onLoad(() => {
 </script>
 
 <template>
-  <view flex="~ col items-center justify-center" p-50px>
+  <view us-flex="~ col items-center justify-center" us-p-50px>
     <Logos />
     <InputEntry />
-    <view v-if="repos" border="1 solid" mt-4>
+    <view v-if="repos" us-border="1 solid" us-mt-4>
       <h2>
         请求返回结果：
       </h2>
       <p>{{ repos.name }}</p>
       <p>{{ repos.description }}</p>
-      <a icon-btn :href="repos.html_url" target="_blank">仓库地址</a>
+      <a class="icon-btn" :href="repos.html_url" target="_blank">仓库地址</a>
     </view>
   </view>
 </template>

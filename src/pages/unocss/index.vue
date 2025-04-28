@@ -2,10 +2,10 @@
 </script>
 
 <template>
-  <view border="1 solid" text="center" padding="10">
+  <view us-border="1 solid" us-text="center" us-p="10">
     Unocss
   </view>
-  <view class="flex flex-justify-center flex-items-center" m="auto" w="50" mt="10px" h="50" bg="amber hover:blue">
+  <view class="flex flex-justify-center flex-items-center" us-m="auto" us-w="50" us-mt="10px" us-h="50" us-bg="amber hover:blue">
     点我 / 将鼠标 hover
   </view>
 </template>
